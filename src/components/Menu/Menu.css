@@ -12,6 +12,9 @@
 .site-title {
     align-self: center;
     color: white;
+    position: absolute;
+    left: 20px;
+    top: 16px;
 }
 .blog-title{
     position: absolute;
