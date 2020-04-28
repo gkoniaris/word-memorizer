@@ -3,6 +3,12 @@ import './App.css';
 import Card from './components/Card/Card';
 import Menu from './components/Menu/Menu'
 import {fetchWordMeaning} from './services/WordService'
+import ReactGA from 'react-ga';
+
+if (process.env.REACT_APP_GOOGLE_ANALYTICS_ID) {
+  ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
 
 function App() {
   const [words, setWords] = useState(null as any)
