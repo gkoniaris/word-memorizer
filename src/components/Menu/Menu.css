@@ -1,0 +1,26 @@
+.menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: black;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+}
+.site-title {
+    align-self: center;
+    color: white;
+}
+.blog-title{
+    position: absolute;
+    right: 20px;
+    top: 23px;
+    color: white;
+    font-size: 10pt;
+}
+a.site-title,
+a.blog-title {
+    text-decoration: none;
+}

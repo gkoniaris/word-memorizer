@@ -1,0 +1,40 @@
+.card {
+    position: relative;
+    flex-direction: column;
+    align-content: flex-start;
+    background: #f9f9f9;
+    margin: 2% auto;
+    padding: 30px 30px;
+    box-shadow: 2px 2px 40px -20px;
+    width: 100%;
+}
+.word {
+    flex: 1 0 21%;
+    font-size: 14pt;
+    font-weight: bold;
+}
+.description {
+    padding: 10px 0 0 0;
+    color: #666;
+    font-size: 11pt;
+}
+.remove {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: red;
+    font-size: 20pt;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+    .card {
+        width: 44%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .card {
+        width: 20%;
+    }
+}
